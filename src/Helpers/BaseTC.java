@@ -3,8 +3,10 @@ package Helpers;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import org.openqa.selenium.WebDriver;
+import org.testng.ITestResult;
 import org.testng.annotations.*;
 import Components.Yalo;
 import java.awt.*;
@@ -73,4 +75,24 @@ public class BaseTC extends Actions
         driver.quit();  // Close the console app used to kick off the browser window
     }
 
+
+
+    @AfterMethod(alwaysRun = true)
+    public void AfterMethod(ITestResult result) throws Exception
+    {
+        if(result.getStatus() == ITestResult.FAILURE)
+        {
+            try
+            {
+                test.log(Status.FAIL, result.getThrowable());
+                Reports.UpdateTestLog(driver, test, "Error", "Unexpected failure", Status.FAIL);
+            }
+            catch (Exception ex)
+            {
+                System.out.println(ex);
+            }
+        }
+
+
+    }
 }

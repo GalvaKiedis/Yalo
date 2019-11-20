@@ -13,7 +13,7 @@ import java.io.IOException;
 
 public class forTesting extends BaseTC
 {
-    @Test
+    //@Test
     public void MTC001_TestNextButton() throws IOException
     {
         Yalo YaloComponent = new Yalo();
@@ -23,7 +23,7 @@ public class forTesting extends BaseTC
         Reports.UpdateTestLog(driver, test, TestName, "NextButtonOK", Status.PASS);
     }
 
-    @Test
+   // @Test
     public void MTC002_TestNextButton() throws IOException
     {
         Yalo YaloComponent = new Yalo();
@@ -33,7 +33,7 @@ public class forTesting extends BaseTC
         Reports.UpdateTestLog(driver, test, TestName, "NextButtonOK", Status.PASS);
     }
 
-    @Test
+   // @Test
     public void MTC003_TestNextButton() throws IOException
     {
         Yalo YaloComponent = new Yalo();
@@ -43,7 +43,7 @@ public class forTesting extends BaseTC
         Reports.UpdateTestLog(driver, test, TestName, "NextButtonOK", Status.PASS);
     }
 
-    @Test
+    //@Test
     public void MTC004_TestNextButton() throws IOException
     {
         Yalo YaloComponent = new Yalo();
@@ -54,7 +54,7 @@ public class forTesting extends BaseTC
     }
 
 
-    @Test
+   // @Test
     public void MTC005_TestGetEarlyAccess() throws IOException
     {
         Yalo YaloComponent = new Yalo();
@@ -64,4 +64,22 @@ public class forTesting extends BaseTC
         Reports.UpdateTestLog(driver, test, TestName, "NextButtonOK", Status.PASS);
     }
 
+
+    @Test
+    public void MTC006_FlowFillFormByNext() throws IOException, InterruptedException {
+        Yalo YaloComponent = new Yalo();
+        TestName = new Object(){}.getClass().getEnclosingMethod().getName();
+        test = Reports.AppendTest(report, TestName);
+        YaloComponent.YaloMainPageFlowFillFormByNext(driver,test);
+    }
+
+    @Test
+    public void MTC007_FlowFillFormByStart() throws IOException
+    {
+        Yalo YaloComponent = new Yalo();
+        TestName = new Object(){}.getClass().getEnclosingMethod().getName();
+        test = Reports.AppendTest(report, TestName);
+        YaloComponent.YaloMainPageFlowFillFormByStart(driver,test);
+
+    }
 }

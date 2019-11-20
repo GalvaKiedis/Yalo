@@ -48,13 +48,32 @@ public class YaloObjects
     //endregion
 
 
-    /** Login */
+    /** step1 */
+    public static By btnEarlyAcces = By.cssSelector("a[href='https://www.yalochat.com/#form']");
     public static By btnNext = By.xpath("//span[contains(text(),'NEXT')]");
     public static By btnStartNow = By.xpath("//span[contains(text(),'START NOW')]");
+
+
     public static By txtName = By.id("name");
     public static By txtPhone = By.id("phone");
     public static By btnFirstNotification = By.cssSelector("button[class='first-notification-button-submit button-secondary']");
-    public static By btnEarlyAcces = By.cssSelector("a[href='https://www.yalochat.com/#form']");
+    public static By btnConfirm = By.xpath("//span[contains(text(),'Confirm')]");
+    public static By btnContinue = By.xpath("//span[contains(text(),'Continue')]");
+    public static By btnBack = By.xpath("//span[contains(text(),'Back')]");
+
+    /** step3 */
+    public static By ddlTemplate = By.id("template");
+    public static By ddlOption1 = By.cssSelector("option[value='0']");
+    public static By ddlOption2 = By.cssSelector("option[value='1']");
+    public static By ddlOption3 = By.cssSelector("option[value='2']");
+    public static By txtTemplate = By.id("templateText");
+    public static By txtAmount = By.name("amount");
+    public static By txtUserName = By.name("user.name");
+    public static By txtClientName = By.name("client.name");
+    public static By txtUserAccount= By.name("user.account");
+    public static By btnSentMessage = By.xpath("//span[contains(text(),'Send test message')]");
+
+
 
 
 
