@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true"
+          name="/Users/mariomoreno/IdeaProjects/selenium.test-suite-customer360/src/TestCases/TC_Login.java">
+            <classes>
+                <class name="testCases.forTesting">
+                    <methods>
+                        <include name="MTC006_CambioCuentaClabeArrows"/>
+                        <include name="MTC007_CambioCuentaClabeDetails"/>
+                        <include name="MTC0023_CambioCuentaClabeDetails"/>
+                        <include name="MTC0024_CambioCuentaClabeDetails"/>
+                    </methods>
+                </class>
+            </classes>
+    </test>
+</suite>
