@@ -65,16 +65,16 @@ public class forTesting extends BaseTC
     }
 
 
-   // @Test
-    public void MTC006_FlowFillFormByNextAU() throws IOException, InterruptedException {
+    @Test
+    public void MTC006_YaloMainPageFlowFillFormByNextAU() throws IOException, InterruptedException {
         Yalo YaloComponent = new Yalo();
         TestName = new Object(){}.getClass().getEnclosingMethod().getName();
         test = Reports.AppendTest(report, TestName);
         Yalo.YaloMainPageFlowFillFormByNextAU(driver,test);
     }
 
-   // @Test
-    public void MTC007_FlowFillFormByStartAU() throws IOException
+    @Test
+    public void MTC007_YaloMainPageFlowFillFormByStartAU() throws IOException
     {
 
         TestName = new Object(){}.getClass().getEnclosingMethod().getName();
@@ -102,7 +102,7 @@ public class forTesting extends BaseTC
     }
 
     @Test
-    public void MTC008_YaloMainPageFlowFillFormByStartPF() throws IOException, InterruptedException {
+    public void MTC010_YaloMainPageFlowFillFormByStartPF() throws IOException, InterruptedException {
         Yalo YaloComponent = new Yalo();
         TestName = new Object(){}.getClass().getEnclosingMethod().getName();
         test = Reports.AppendTest(report, TestName);
@@ -110,7 +110,7 @@ public class forTesting extends BaseTC
     }
 
     @Test
-    public void MTC009_YaloMainPageFlowFillFormByNextPF() throws IOException
+    public void MTC011_YaloMainPageFlowFillFormByNextPF() throws IOException
     {
 
         TestName = new Object(){}.getClass().getEnclosingMethod().getName();
