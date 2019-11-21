@@ -45,6 +45,8 @@ public class Props extends Actions
     public static String ClientName() { return getProperty("ClientName"); }
     public static String UserName() { return getProperty("UserName"); }
     public static String UserAccount() { return getProperty("UserAccount"); }
+    public static String amount() { return getProperty("amount"); }
+    public static String date() { return getProperty("date"); }
     public static String ExpectedConditionsTimeoutSeconds() { return getProperty("ExpectedConditionsTimeoutSeconds"); }
     public static String ImplicitlyWait() { return getProperty("ImplicitlyWait"); }
     public static String PageLoadTimeout() { return getProperty("PageLoadTimeout"); }

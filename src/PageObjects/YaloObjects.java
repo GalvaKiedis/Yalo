@@ -71,6 +71,7 @@ public class YaloObjects
     public static By txtUserName = By.name("user.name");
     public static By txtClientName = By.name("client.name");
     public static By txtUserAccount= By.name("user.account");
+    public static By txtdate= By.name("date");
     public static By btnSentMessage = By.xpath("//span[contains(text(),'Send test message')]");
 
 

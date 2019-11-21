@@ -24,7 +24,7 @@ public class BaseTC extends Actions
     public ExtentReports report = new ExtentReports();
     public ExtentTest test;
     // Create pages instances
-    public Yalo Login360;
+    public Yalo Yalo;
     // Create helpers instances
     public Actions Actions;
     public IsElement IsElement;
@@ -42,7 +42,7 @@ public class BaseTC extends Actions
     {
         report.attachReporter(htmlReporter);
         // Pages instances
-        Login360 = new Yalo();
+        Yalo = new Yalo();
         // Helpers instances
         Actions = new Actions();
         IsElement = new IsElement();

@@ -16,10 +16,10 @@ public class forTesting extends BaseTC
     //@Test
     public void MTC001_TestNextButton() throws IOException
     {
-        Yalo YaloComponent = new Yalo();
+
         TestName = new Object(){}.getClass().getEnclosingMethod().getName();
         test = Reports.AppendTest(report, TestName);
-        YaloComponent.YaloMainPageFlowNext(driver,test);
+        Yalo.YaloMainPageFlowNext(driver,test);
         Reports.UpdateTestLog(driver, test, TestName, "NextButtonOK", Status.PASS);
     }
 
@@ -29,7 +29,7 @@ public class forTesting extends BaseTC
         Yalo YaloComponent = new Yalo();
         TestName = new Object(){}.getClass().getEnclosingMethod().getName();
         test = Reports.AppendTest(report, TestName);
-        YaloComponent.YaloMainPageFlow2Next(driver,test);
+        Yalo.YaloMainPageFlow2Next(driver,test);
         Reports.UpdateTestLog(driver, test, TestName, "NextButtonOK", Status.PASS);
     }
 
@@ -39,7 +39,7 @@ public class forTesting extends BaseTC
         Yalo YaloComponent = new Yalo();
         TestName = new Object(){}.getClass().getEnclosingMethod().getName();
         test = Reports.AppendTest(report, TestName);
-        YaloComponent.YaloMainPageFlow3Next(driver,test);
+        Yalo.YaloMainPageFlow3Next(driver,test);
         Reports.UpdateTestLog(driver, test, TestName, "NextButtonOK", Status.PASS);
     }
 
@@ -49,7 +49,7 @@ public class forTesting extends BaseTC
         Yalo YaloComponent = new Yalo();
         TestName = new Object(){}.getClass().getEnclosingMethod().getName();
         test = Reports.AppendTest(report, TestName);
-        YaloComponent.YaloMainPageFlow4Next(driver,test);
+        Yalo.YaloMainPageFlow4Next(driver,test);
         Reports.UpdateTestLog(driver, test, TestName, "NextButtonOK", Status.PASS);
     }
 
@@ -60,26 +60,62 @@ public class forTesting extends BaseTC
         Yalo YaloComponent = new Yalo();
         TestName = new Object(){}.getClass().getEnclosingMethod().getName();
         test = Reports.AppendTest(report, TestName);
-        YaloComponent.YaloMainPageFlowGetEarlyAccess(driver,test);
+        Yalo.YaloMainPageFlowGetEarlyAccess(driver,test);
         Reports.UpdateTestLog(driver, test, TestName, "NextButtonOK", Status.PASS);
     }
 
 
-    @Test
-    public void MTC006_FlowFillFormByNext() throws IOException, InterruptedException {
+   // @Test
+    public void MTC006_FlowFillFormByNextAU() throws IOException, InterruptedException {
         Yalo YaloComponent = new Yalo();
         TestName = new Object(){}.getClass().getEnclosingMethod().getName();
         test = Reports.AppendTest(report, TestName);
-        YaloComponent.YaloMainPageFlowFillFormByNext(driver,test);
+        Yalo.YaloMainPageFlowFillFormByNextAU(driver,test);
+    }
+
+   // @Test
+    public void MTC007_FlowFillFormByStartAU() throws IOException
+    {
+
+        TestName = new Object(){}.getClass().getEnclosingMethod().getName();
+        test = Reports.AppendTest(report, TestName);
+        Yalo.YaloMainPageFlowFillFormByStartAU(driver,test);
+
     }
 
     @Test
-    public void MTC007_FlowFillFormByStart() throws IOException
-    {
+    public void MTC008_YaloMainPageFlowFillFormByStartPU() throws IOException, InterruptedException {
         Yalo YaloComponent = new Yalo();
         TestName = new Object(){}.getClass().getEnclosingMethod().getName();
         test = Reports.AppendTest(report, TestName);
-        YaloComponent.YaloMainPageFlowFillFormByStart(driver,test);
+        Yalo.YaloMainPageFlowFillFormByNextPU(driver,test);
+    }
+
+    @Test
+    public void MTC009_YaloMainPageFlowFillFormByNextPU() throws IOException
+    {
+
+        TestName = new Object(){}.getClass().getEnclosingMethod().getName();
+        test = Reports.AppendTest(report, TestName);
+        Yalo.YaloMainPageFlowFillFormByStartPU(driver,test);
+
+    }
+
+    @Test
+    public void MTC008_YaloMainPageFlowFillFormByStartPF() throws IOException, InterruptedException {
+        Yalo YaloComponent = new Yalo();
+        TestName = new Object(){}.getClass().getEnclosingMethod().getName();
+        test = Reports.AppendTest(report, TestName);
+        Yalo.YaloMainPageFlowFillFormByNextPF(driver,test);
+    }
+
+    @Test
+    public void MTC009_YaloMainPageFlowFillFormByNextPF() throws IOException
+    {
+
+        TestName = new Object(){}.getClass().getEnclosingMethod().getName();
+        test = Reports.AppendTest(report, TestName);
+        Yalo.YaloMainPageFlowFillFormByStartPF(driver,test);
 
     }
 }
