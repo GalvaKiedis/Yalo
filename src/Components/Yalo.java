@@ -160,4 +160,20 @@ public class Yalo extends BaseTC
         Click(driver,btnSentMessage);
         Click(driver,btnContinue);
     }
+
+    public void LoginExample(WebDriver driver,  ExtentTest test) throws IOException
+    {
+        GoToUrl(driver, Helpers.Props.URL());
+        String validador,ErrorMessage="The username or password are incorrect";
+        Click(driver, btnLogin);
+        EnterText(driver,txtUserName2,Props.UserName());
+        EnterText(driver,txtPassword2,Props.Password());
+        Click(driver, btnLogin);
+        validador= GetText(driver,lblErrorMessage);
+        if (validador.equalsIgnoreCase(ErrorMessage));
+        {
+            System.out.println("login incorrecto");
+        }
+
+    }
 }

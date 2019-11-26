@@ -44,6 +44,7 @@ public class Props extends Actions
     public static String Name() { return getProperty("Name"); }
     public static String ClientName() { return getProperty("ClientName"); }
     public static String UserName() { return getProperty("UserName"); }
+    public static String Password() { return getProperty("Password"); }
     public static String UserAccount() { return getProperty("UserAccount"); }
     public static String amount() { return getProperty("amount"); }
     public static String date() { return getProperty("date"); }

@@ -25,7 +25,7 @@ public class Driver extends Actions
     public WebDriver InitiateDriver()
     {
         System.out.println("launching chrome browser");
-        System.setProperty("webdriver.chrome.driver", workingDir + "/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", workingDir + "/chromedriver");
         ChromeOptions options = new ChromeOptions();
         options.addArguments("start-maximized");
         options.setExperimentalOption("excludeSwitches", Collections.singletonList("enable-automation"));

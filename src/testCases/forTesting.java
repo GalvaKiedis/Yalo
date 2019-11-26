@@ -118,4 +118,16 @@ public class forTesting extends BaseTC
         Yalo.YaloMainPageFlowFillFormByStartPF(driver,test);
 
     }
+
+
+
+    @Test
+    public void LoginExample() throws IOException
+    {
+
+        TestName = new Object(){}.getClass().getEnclosingMethod().getName();
+        test = Reports.AppendTest(report, TestName);
+        Yalo.LoginExample(driver,test);
+
+    }
 }

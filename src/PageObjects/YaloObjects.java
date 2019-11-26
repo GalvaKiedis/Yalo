@@ -75,6 +75,14 @@ public class YaloObjects
     public static By btnSentMessage = By.xpath("//span[contains(text(),'Send test message')]");
 
 
+    /**Login test*/
+
+    public static By btnLogin = By.cssSelector("button[type='button']");
+    public static By txtUserName2 = By.name("login.username");
+    public static By txtPassword2 = By.name("login.password");
+    public static By lblErrorMessage = By.id("login-error-message");
+
+
 
 
 
